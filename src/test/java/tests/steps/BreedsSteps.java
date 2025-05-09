@@ -37,9 +37,4 @@ public class BreedsSteps {
     public void response_should_contain_exact_number_of_breeds(int limit) {
         response.then().body("data.size()", equalTo(limit));
     }
-
-    @Then("the response should return status code {int} or a validation error")
-    public void the_response_should_return_status_or_validation_error(Integer expectedStatusCode) {
-        response.then().statusCode(anyOf(equalTo(expectedStatusCode), equalTo(422), equalTo(400)));
-    }
 }
