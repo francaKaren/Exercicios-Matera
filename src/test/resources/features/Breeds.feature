@@ -17,3 +17,8 @@ Feature: Breeds API endpoint
   Scenario: Unhappy path - Invalid endpoint
     When I send a GET request to "/breedz"
     Then the response status code should be 404
+
+  Scenario: Unhappy path - Invalid query parameter
+    When I send a GET request to "/breeds?page=abc"
+    Then the response should return status code 400 or a validation error
+

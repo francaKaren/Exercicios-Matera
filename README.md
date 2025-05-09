@@ -17,7 +17,7 @@ Automated API tests using Java, Cucumber, and RestAssured for the [Cat Facts API
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/seu-usuario/catfact-api-test.git
+git clone https://github.com/francaKaren/Exercicios-Matera.git
 cd catfact-api-test
 ```
 
